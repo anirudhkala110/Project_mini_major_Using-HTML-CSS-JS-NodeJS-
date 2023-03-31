@@ -1,0 +1,49 @@
+<html lang="en">
+{{> header }}
+<body>
+    <!-- <nav>
+        <div class="logo">Project Final</div>
+        <div class="menu">
+            <a href="/home">Home</a>
+            <a href="/register">Register</a>
+           <button aria-disabled="true" style="background: none; border : none; margin: 10;
+           text-decoration: none;
+           font-size: 18px;
+           color: #5199E4;
+           cursor:not-allowed">Login</button>
+            <a href="/profile">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav> -->
+    {{> navbar }}
+    <div class="container">
+        <div class="text">Admin Login Form</div>
+        {{#if msg}}
+        <p class="{{msg_type}}">{{msg}}</p>
+        {{/if}}
+        <form action="/auth/login" method="post">
+            <div class="data">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="data">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password ?</a>
+            </div>
+            <div class="btn">
+                <button type="submit">Login</button>
+            </div>
+            <div class="signup-link">
+                Not Admin ? <a href="/register">Signup Now</a>
+            </div>
+        </form>
+        <div class="data">
+            <label for="">View as Student</label>
+        </div>
+    </div>
+    {{> footer}}
+</body>
+</html>

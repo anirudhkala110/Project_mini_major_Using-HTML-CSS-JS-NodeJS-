@@ -1,0 +1,61 @@
+<html lang="en">
+{{> header }}
+<body>
+    <!-- <nav>
+        <div class="logo">Project Final</div>
+        <div class="menu">
+            <a href="/home">Home</a>
+            <button aria-disabled="true" style="background: none; border : none; margin: 10;
+            text-decoration: none;
+            font-size: 18px;
+            color: #5199E4;
+            cursor:not-allowed">Register</button>
+            <a href="/">Login</a>
+            <a href="/profile">Profile</a>
+            <button aria-disabled="true" style="background: none; border : none; margin: 10;
+            text-decoration: none;
+            font-size: 18px;
+            color: #5199E4;
+            cursor:not-allowed">Logout</button>
+        </div>
+    </nav> -->
+    {{> navbar }}
+    <div class="container">
+        <div class="text">New Admin Registation Form</div>
+        {{#if msg}}
+        <br>
+        <p class="{{msg_type}}">{{msg}}</p><!--{{msg}} this will have the message from the users.js file-->
+        {{/if}}
+        <form action="/auth/register" method="post">
+            <div class="data">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="data">
+                <label for="phone">Mobile Number</label>
+                <input type="number" name="phone" id="phone" required>
+            </div>
+            <div class="data">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div class="data">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="data">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm_password" required>
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Register Now </button>
+            </div>
+            <div class="signup-link">
+                Already Admin ? <a href="/"> Login now !</a>
+            </div>
+        </form>
+    </div>
+    {{> footer}}
+</body>
+</html>
