@@ -1,0 +1,11 @@
+DATABASE=db3
+DATABASE_HOST=localhost
+DATABASE_USER=root
+DATABASE_PASS=Akala@12345
+JWT_SECRET = 1234
+JWT_EXPIRES_IN = 90d
+JWT_COOKIE_EXPIRES = 90 
+
+
+
+/*<-------------------These statements should be writen on the .env file-------------------->*/
