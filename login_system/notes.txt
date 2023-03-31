@@ -1,0 +1,1 @@
+We are using index.hbs in the place of login.html or login.hbs
