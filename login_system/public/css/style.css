@@ -1,0 +1,350 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    font-weight: 4;
+    /*vh = viewport height*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background: #5199E4; */
+    width: 100%;
+}
+
+.container,
+.container-fluid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: whitesmoke;
+    width: 410px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px 2px, rgba(0, 0, 0, 0.3) 0px 3px 7px 3px;
+}
+
+.container .text {
+    font-size: 35px;
+    font-weight: 4;
+    text-align: center;
+    color: #5199E4;
+}
+
+.container form {
+    margin-top: -20px;
+}
+
+.container form .data {
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+form .data label {
+    font-size: 18px;
+}
+
+form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid silver;
+}
+
+form .data input:focus {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    border-color: #5199E4;
+    border-bottom-width: 3px;
+    transition: 0.2s;
+}
+
+form .forgot-password a {
+    color: #5199E4;
+    text-decoration: none;
+}
+
+form .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+form .btn {
+    margin: 30px 0px;
+    height: 45px;
+    width: 100%;
+}
+
+form .btn button {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: #5199E9;
+}
+
+form .signup-link {
+    text-align: center;
+}
+
+form .signup-link a {
+    color: #5199E4;
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    /* color: #5199E4; */
+    text-decoration: underline;
+}
+
+.container-fluid {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #282A35;
+    padding: 0 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-weight: 500;
+    font-size: 18px;
+    font-weight: 6;
+    /* color: #34495e; */
+    color: white;
+}
+
+nav .menu a {
+    margin: 10;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 6;
+    color: #b2cce9;
+}
+
+nav .menu a:hover {
+    text-decoration: underline;
+}
+
+.container-fluid h2,
+.container-fluid h3 {
+    font-weight: 400;
+}
+
+.container-fluid img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+@media only screen and(max-width:530px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+    }
+
+    body {
+        height: 100vh;
+        /*vh = viewport height*/
+        background: #5199E4;
+        width: 100%;
+    }
+
+    .container,
+    .container-fluid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        background-color: whitesmoke;
+        width: 75%;
+        padding: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px 2px, rgba(0, 0, 0, 0.3) 0px 3px 7px 3px;
+    }
+
+    .container .text {
+        font-size: 35px;
+        font-weight: 4;
+        text-align: center;
+        color: #5199E4;
+    }
+
+    .container form {
+        margin-top: -20px;
+    }
+
+    .container form .data {
+        height: 45px;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    form .data label {
+        font-size: 18px;
+    }
+
+    form .data input {
+        height: 100%;
+        width: 100%;
+        padding-left: 10px;
+        font-size: 16px;
+        border: 1px solid silver;
+    }
+
+    form .data input:focus {
+        height: 100%;
+        width: 100%;
+        padding-left: 10px;
+        font-size: 16px;
+        border-color: #5199E4;
+        border-bottom-width: 3px;
+        transition: 0.2s;
+    }
+
+    form .forgot-password a {
+        color: #5199E4;
+        text-decoration: none;
+    }
+
+    form .forgot-password a:hover {
+        text-decoration: underline;
+    }
+
+    form .btn {
+        margin: 30px 0px;
+        height: 45px;
+        width: 100%;
+    }
+
+    form .btn button {
+        height: 100%;
+        width: 100%;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: #5199E9;
+    }
+
+    form .signup-link {
+        text-align: center;
+    }
+
+    form .signup-link a {
+        color: #5199E4;
+        text-decoration: none;
+    }
+
+    form .signup-link a:hover {
+        /* color: #5199E4; */
+        text-decoration: underline;
+    }
+
+    .container-fluid {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        padding: 0 20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .logo {
+        font-weight: 500;
+        font-size: 18px;
+        font-weight: 6;
+        color: #34495e;
+    }
+
+    nav .menu a {
+        margin: 10;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 6;
+        color: #5199E4;
+    }
+
+    nav .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .container-fluid h2,
+    .container-fluid h3 {
+        font-weight: 400;
+    }
+
+    .container-fluid img {
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+
+.error {
+    margin-top: 4px;
+    font-weight: bolder;
+    border: 1px solid rgb(240, 124, 124);
+    width: 100%;
+    color: red;
+    border: 1px solid rgb(200, 116, 116);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgba(250, 187, 187, 0.642);
+}
+
+.good {
+    font-weight: bolder;
+    color: green;
+    border: 2px solid green;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgba(187, 250, 215, 0.642);
+}
