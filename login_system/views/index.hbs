@@ -1,6 +1,14 @@
 <html lang="en">
-{{> header }}
+    <head>
+        <link rel="stylesheet" href="/css/Home.css">
+        <link rel="stylesheet" href="/css/CircularHomeinterface.css">
+        <link rel="stylesheet" href="/css/courseallotment.css">
+        <link rel="stylesheet" href="/css/Notice.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/timetablemainpage.css">
+</head>
 <body>
+{{>header}}
     <!-- <nav>
         <div class="logo">Project Final</div>
         <div class="menu">
@@ -15,7 +23,6 @@
             <a href="#">Logout</a>
         </div>
     </nav> -->
-    {{> navbar }}
     <div class="container">
         <div class="text">Admin Login Form</div>
         {{#if msg}}
@@ -36,12 +43,12 @@
             <div class="btn">
                 <button type="submit">Login</button>
             </div>
-            <div class="signup-link">
+            <!--<div class="signup-link">
                 Not Admin ? <a href="/register">Signup Now</a>
-            </div>
+            </div>-->
         </form>
         <div class="data">
-            <label for="">View as Student</label>
+            <button class="studentlogin"><a href="/StudentHomepage"> View as Student</a></button>
         </div>
     </div>
     {{> footer}}

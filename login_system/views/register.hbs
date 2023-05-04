@@ -1,4 +1,13 @@
 <html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/Home.css">
+        <link rel="stylesheet" href="/css/uploadnotices.css">
+        <link rel="stylesheet" href="/css/CircularHomeinterface.css">
+        <link rel="stylesheet" href="/css/courseallotment.css">
+        <link rel="stylesheet" href="/css/Notice.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/timetablemainpage.css">
+</head>
 {{> header }}
 <body>
     <!-- <nav>
@@ -19,8 +28,8 @@
             cursor:not-allowed">Logout</button>
         </div>
     </nav> -->
-    {{> navbar }}
-    <div class="container">
+    <div class="baseforeverypage">
+        <div class="container">
         <div class="text">New Admin Registation Form</div>
         {{#if msg}}
         <br>
@@ -55,7 +64,8 @@
                 Already Admin ? <a href="/"> Login now !</a>
             </div>
         </form>
+        </div>
     </div>
-    {{> footer}}
+    {{>footer}}
 </body>
 </html>
