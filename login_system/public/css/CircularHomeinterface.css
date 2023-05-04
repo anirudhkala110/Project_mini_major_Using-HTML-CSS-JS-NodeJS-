@@ -6,21 +6,24 @@
 .circularsbase {
     display: flex;
     width: 96%;
-    min-height: 80%;
+    height: 56vh;
     margin-left: 2%;
     /* border: 2px solid black; */
     border-radius: 12px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
 .internalcircular {
-    width: 50%;
+    width: 100%;
     margin: 1%;
     background-color: wheat;
     border: 2px solid black;
     border-radius: 10px;
     list-style: none;
+    height: 50vh;
+    overflow: auto;
+    padding-bottom: 2px;
 }
 
 .internalcircular li {
@@ -30,11 +33,10 @@
 .internalcircularhead {
     width: 90%;
     font-size: 3.5vw;
-    min-height: 60px;
+    height: 6vw;
     background-color: rgba(19, 235, 235, 0.788);
     border-radius: 10px;
     display: flex;
-    height: 20%;
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: auto;
@@ -46,11 +48,14 @@
 }
 
 .extrnalcircular {
-    width: 50%;
+    width: 100%;
     margin: 1% 1% 1% 0%;
+    height: 50vh;
     background-color: wheat;
     border: 2px solid black;
     border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 2px;
 }
 
 .extrnalcircular li {
@@ -60,7 +65,6 @@
 .externalcircularhead {
     width: 90%;
     margin-bottom: 1%;
-    min-height: 60px;
     font-size: 3.5vw;
     background-color: rgba(19, 235, 235, 0.788);
     border-radius: 10px;
@@ -68,7 +72,7 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    height: 20%;
+    height: 6vw;
     text-align: center;
     align-items: center;
     justify-content: center;

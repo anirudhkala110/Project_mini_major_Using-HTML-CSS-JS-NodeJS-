@@ -1,0 +1,95 @@
+.uploadnotices {
+    display: block;
+    /* font-size: 1.5vw; */
+    width: 100%;
+    padding: 2%;
+    border: 2px solid;
+    background-color: rgb(162, 217, 229);
+}
+
+.subclass {
+    /* background: red; */
+    /* border: 2px solid; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: top;
+    justify-content: center;
+}
+
+.uploadnotices form {
+    display: block;
+    width: 100%;
+}
+
+form input[type="text"] {
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    /* margin: 5px 0px 5px 0px; */
+}
+
+form input[type="file"] {
+    width: 98%;
+    background-color: white;
+    border: 1px solid silver;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+form input[type="date"] {
+    width: 98%;
+    background-color: white;
+    border: 1px solid silver;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.subclass label {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    height: 50px;
+    border: 1px solid silver;
+    background: white;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.uploadnotices textarea {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid silver;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.uploadsubmit {
+    margin-left: 80%;
+    right: 0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(119, 223, 248);
+    width: 20%;
+    min-height: 38px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#file {
+    padding-top: 1.5%;
+}
+
+#date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
