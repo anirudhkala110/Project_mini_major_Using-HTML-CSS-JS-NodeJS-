@@ -1,20 +1,10 @@
-<head>
-        <link rel="stylesheet" href="/css/Home.css">
-        <link rel="stylesheet" href="/css/uploadnotices.css">
-        <link rel="stylesheet" href="/css/Edituploadednotices.css">
-        <link rel="stylesheet" href="/css/CircularHomeinterface.css">
-        <link rel="stylesheet" href="/css/courseallotment.css">
-        <link rel="stylesheet" href="/css/Notice.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/viewport.css">
-        <link rel="stylesheet" href="/css/timetablemainpage.css">
-</head>
+
 <div class="span">
                 <span>
                     <div class="navbar">
                         <div class="tabwithlogo">
                             <div class="homeimage">
-                                <a href="index.hbs"><img
+                                <a href="index.html"><img
                                         src="/images/home.png"
                                         class="HomeLogoImage" alt=""></a>
                             </div>
@@ -27,19 +17,8 @@
                                 <img src="/images/circular.png"
                                     class="HomeLogoImage" alt="">
                             </div>
-                                <div class="menu-wrap">
-                                    <ul class="menu">
-                                        <li class="menu-item">
-                                            <a href="#">Student Corner</a>
-                                            <ul class="drop-menu">
-                                                <li><a href="/Notice">Notices</a></li>
-                                            <li><a href="/CircularHomeinterface"> Circulars</a></li>
-                                            <li><a href="/TImeTableMain">Time Table</a></li>
-                                            <li><a href="/CourseallotmentMain">Course Allotment</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <button class="studentcorner" id="studentcornerbtn"
+                                type="submit">Student Corner</button>
                         </div>
                         <!--<div class="tabwithlogo">
                             <div class="homeimage">
@@ -54,9 +33,9 @@
                     </div>
                 </span>
             </div>
-            <!--<ul id="dropdownitems" class="dropdown-content" style="display: none;">
+            <ul id="dropdownitems" class="dropdown-content">
                 <li><a href="/Notice">Notices</a></li>
                 <li><a href="/CircularHomeinterface"> Circulars</a></li>
                 <li><a href="/TImeTableMain">Time Table</a></li>
                 <li><a href="/CourseallotmentMain">Course Allotment</a></li>
-            </ul>-->
+            </ul>

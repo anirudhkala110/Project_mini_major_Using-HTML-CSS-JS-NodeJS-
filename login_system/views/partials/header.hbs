@@ -1,11 +1,40 @@
+<!--navbar for every page-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/Home.css">
-    <link rel="stylesheet" href="/css/courseallotment.css">
-    <link rel="stylesheet" href="/css/timetablemainpage.css">
-    <link rel="stylesheet" href="/css/CircularHomeinterface.css">
-<title>Student-Corner-Home-Page</title>
+        <link rel="stylesheet" href="/css/Home.css">
+        <link rel="stylesheet" href="/css/uploadnotices.css">
+        <link rel="stylesheet" href="/css/CircularHomeinterface.css">
+        <link rel="stylesheet" href="/css/courseallotment.css">
+        <link rel="stylesheet" href="/css/Notice.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/viewport.css">
+        <link rel="stylesheet" href="/css/Edituploadednotices.css">
+        <link rel="stylesheet" href="/css/timetablemainpage.css">
 </head>
+<div id="headerforeverypage">
+            <div class="uninamelogo">
+                <div class="unilogo">
+                    <a href=""> <img src="/images/Pantnagar_logo.jpg"
+                            alt=""
+                            class="unilogoImage">
+                    </a>
+                </div>
+                <div class="universitynameandlogo">Govind Ballabh Pant
+                    University of
+                    Agriculture and Technology</div>
+            </div>
+            <div class="colgname">College of Technology</div>
+            <div class="department">..Information Technology..</div>
+        </div> 
+<nav>
+    <div class="logo">Project Final</div>
+        <div class="menu">
+            {{#if user}}
+            <a href="/home">Home</a>
+            <a href="/profile">Profile</a>
+            <a href="/auth/logout">Logout</a>
+            {{else}}
+            <a href="/">Login</a>
+            <!--<a href="/register">Register</a>-->
+            {{/if}}
+        </div>
+</nav>
